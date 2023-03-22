@@ -1,0 +1,31 @@
+.headerFont {
+  color: white;
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 0px 8px 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.headerFont:hover {
+  color: #1E57FA;
+}
+
+.selectChainButton {
+  background: black;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+}
+
+.selectChainButton:hover {
+  border: 1px solid #1E57FA;
+}
+
+.selectChain:hover {
+  background-color: rgb(15 17 18);
+  border-radius: 20px;
+  padding: 0px 20px;
+}

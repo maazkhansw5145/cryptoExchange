@@ -1,0 +1,10 @@
+.selectChainButton {
+    background: black;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+  }
+  
+  .selectChainButton:hover {
+    border: 1px solid rgb(72, 211, 170);
+  }

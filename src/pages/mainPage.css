@@ -1,0 +1,53 @@
+.mainFont {
+  color: white;
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 0px 8px 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.mainFont:hover {
+  color: #1E57FA;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input {
+  width: 80%; /* default width for smaller screens */
+  max-width: 220px; /* max-width for larger screens */
+  box-sizing: border-box; /* include padding and border in the total width */
+  padding: 10px; /* add some padding for better readability */
+  border: 1px solid #ccc; /* add a border for visual separation */
+}
+
+/* Media query for screens larger than 480px */
+@media only screen and (min-width: 480px) {
+  input {
+    width: 220px; /* set a fixed width for larger screens */
+  }
+}
+
+.currencyFont {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+/* Adjust font size for smaller screens */
+@media only screen and (max-width: 480px) {
+  .currencyFont {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
